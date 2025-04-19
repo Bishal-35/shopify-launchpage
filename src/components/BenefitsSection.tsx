@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Check, Star, Moon, Planet } from "lucide-react";
+import { Check, Star, Moon, Globe } from "lucide-react";
 
 const benefits = [
   "Create an immersive cosmic atmosphere in any room",

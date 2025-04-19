@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import { ShoppingCart } from "lucide-react";
+import ShopifyButton from "./ShopifyButton";
 
 const StickyCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,10 +24,7 @@ const StickyCTA = () => {
           <p className="font-medium text-white">Astronaut Galaxy Projector</p>
           <p className="text-purple-400 font-bold">$29.99 <span className="text-gray-400 text-sm line-through">$49.99</span></p>
         </div>
-        <Button className="bg-purple-600 hover:bg-purple-700 md:px-8">
-          <ShoppingCart className="w-4 h-4 md:mr-2" /> 
-          <span className="hidden md:inline">Buy Now</span>
-        </Button>
+        <ShopifyButton />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart } from "lucide-react";
+import ShopifyButton from "./ShopifyButton";
 
 const CTASection = () => {
   return (
@@ -16,10 +16,7 @@ const CTASection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white text-lg py-6 px-8 shadow-lg">
-              <ShoppingCart className="w-5 h-5 mr-2" /> 
-              Buy Now
-            </Button>
+            <ShopifyButton className="w-full" />
             <Button variant="outline" className="border-purple-400 text-purple-400 hover:bg-purple-400/10 text-lg py-6">
               Save 40% Today
             </Button>

@@ -5,18 +5,18 @@ import { ShoppingCart } from "lucide-react";
 
 const NavBar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold text-shopify-blue">Whizz & Co.</h1>
+          <h1 className="text-2xl font-bold text-white">One94 Space</h1>
         </div>
         <div className="hidden md:flex space-x-6">
-          <a href="#features" className="text-gray-600 hover:text-shopify-blue transition-colors">Features</a>
-          <a href="#benefits" className="text-gray-600 hover:text-shopify-blue transition-colors">Benefits</a>
-          <a href="#testimonials" className="text-gray-600 hover:text-shopify-blue transition-colors">Reviews</a>
-          <a href="#faq" className="text-gray-600 hover:text-shopify-blue transition-colors">FAQ</a>
+          <a href="#features" className="text-gray-300 hover:text-white transition-colors">Features</a>
+          <a href="#benefits" className="text-gray-300 hover:text-white transition-colors">Benefits</a>
+          <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Reviews</a>
+          <a href="#faq" className="text-gray-300 hover:text-white transition-colors">FAQ</a>
         </div>
-        <Button className="bg-shopify-blue hover:bg-shopify-blue/90">
+        <Button className="bg-purple-600 hover:bg-purple-700">
           <ShoppingCart className="w-4 h-4 mr-2" /> Cart (0)
         </Button>
       </div>

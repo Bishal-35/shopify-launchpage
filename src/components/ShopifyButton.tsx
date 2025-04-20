@@ -1,8 +1,9 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface ShopifyButtonProps {
   className?: string;
+  text?: string;
 }
 
 declare global {
@@ -11,7 +12,9 @@ declare global {
   }
 }
 
-const ShopifyButton: React.FC<ShopifyButtonProps> = ({ className }) => {
+const ShopifyButton: React.FC<ShopifyButtonProps> = ({ className, text = "Add to Cart" }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   useEffect(() => {
     if (window.ShopifyBuy) {
       const client = window.ShopifyBuy.buildClient({
@@ -34,7 +37,7 @@ const ShopifyButton: React.FC<ShopifyButtonProps> = ({ className }) => {
               price: false,
             },
             text: {
-              button: 'Add to Cart',
+              button: text,
             },
             styles: {
               product: {
@@ -44,15 +47,17 @@ const ShopifyButton: React.FC<ShopifyButtonProps> = ({ className }) => {
                 },
               },
               button: {
-                'background-color': '#8B5CF6',
+                'background-color': '#9b87f5',
                 'font-family': 'inherit',
                 'font-size': '1rem',
+                'font-weight': '600',
                 'padding-top': '1rem',
                 'padding-bottom': '1rem',
                 'padding-left': '2rem',
                 'padding-right': '2rem',
+                'border-radius': '0.5rem',
                 ':hover': {
-                  'background-color': '#7C3AED',
+                  'background-color': '#7E69AB',
                 },
               },
             },
@@ -60,19 +65,32 @@ const ShopifyButton: React.FC<ShopifyButtonProps> = ({ className }) => {
           cart: {
             styles: {
               button: {
-                'background-color': '#8B5CF6',
+                'background-color': '#9b87f5',
+                'font-weight': '600',
                 ':hover': {
-                  'background-color': '#7C3AED',
+                  'background-color': '#7E69AB',
                 },
+              },
+              footer: {
+                'background-color': '#f5f5f7',
               },
             },
           },
         },
       });
+      
+      setIsLoaded(true);
     }
-  }, []);
+  }, [text]);
 
-  return <div id="shopify-btn-container" className={className}></div>;
+  return (
+    <div 
+      id="shopify-btn-container" 
+      className={`${className} ${!isLoaded ? 'min-h-[50px] flex items-center justify-center' : ''}`}
+    >
+      {!isLoaded && <span className="animate-pulse">Loading...</span>}
+    </div>
+  );
 };
 
 export default ShopifyButton;

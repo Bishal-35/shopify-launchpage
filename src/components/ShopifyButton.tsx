@@ -10,6 +10,7 @@ export const PRODUCT_ID = '7834631504048';
 
 interface ShopifyButtonProps {
   className?: string;
+  text?: string;
 }
 
 declare global {
@@ -130,7 +131,14 @@ const ShopifyButton: React.FC<ShopifyButtonProps> = ({ className }) => {
     );
   }
 
-  return <div id="shopify-btn-container" className={className}></div>;
+  return (
+    <div 
+      id="shopify-btn-container" 
+      className={`${className} ${!isLoaded ? 'min-h-[50px] flex items-center justify-center' : ''}`}
+    >
+      {!isLoaded && <span className="animate-pulse">Loading...</span>}
+    </div>
+  );
 };
 
 export default ShopifyButton;

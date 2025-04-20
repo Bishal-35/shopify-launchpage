@@ -15,14 +15,14 @@ const ShopifyButton: React.FC<ShopifyButtonProps> = ({ className }) => {
   useEffect(() => {
     if (window.ShopifyBuy) {
       const client = window.ShopifyBuy.buildClient({
-        domain: 'your-store.myshopify.com', // Replace with your Shopify store URL
-        storefrontAccessToken: 'your-storefront-access-token', // Replace with your access token
+        domain: 'qs5svr-ck.myshopify.com', 
+        storefrontAccessToken: '215dc8b4d5249d3ae8a752bb96d35008',
       });
 
       const ui = window.ShopifyBuy.UI.init(client);
 
       ui.createComponent('product', {
-        id: 'your-product-id', // Replace with your product ID
+        id: '7834631504048', 
         node: document.getElementById('shopify-btn-container'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {

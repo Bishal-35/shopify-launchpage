@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import ShopifyButton from "./ShopifyButton";
+import ShopifyBuyButton from "./ShopifyBuyButton";
 
 const StickyCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,9 +23,9 @@ const StickyCTA = () => {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="hidden md:block">
           <p className="font-medium text-white">Astronaut Galaxy Projector</p>
-          <p className="text-purple-400 font-bold">$29.99 <span className="text-gray-400 text-sm line-through">$49.99</span></p>
+          <p className="text-purple-400 font-bold">₹799 <span className="text-gray-400 text-sm line-through">₹1399</span></p>
         </div>
-        <ShopifyButton />
+        <ShopifyBuyButton />
       </div>
     </div>
   );

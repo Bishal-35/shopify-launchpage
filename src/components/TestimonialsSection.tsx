@@ -5,20 +5,20 @@ import { Star, User } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Alex Thompson",
-    location: "Los Angeles, CA",
+    name: "Simrat Sidhu",
+    location: " Delhi, India",
     rating: 5,
     comment: "This projector transformed my gaming room into an epic space station! The colors are vibrant and the rotation feature creates an incredible atmosphere."
   },
   {
-    name: "Sarah Chen",
-    location: "New York, NY",
+    name: "Rudraksh Bansiwal",
+    location: "Punjab, India",
     rating: 5,
     comment: "My kids absolutely love this! It's perfect for bedtime and helps them drift off to sleep under the stars. The timer feature is super convenient."
   },
   {
-    name: "Marcus Parker",
-    location: "Miami, FL",
+    name: "Armaan Au",
+    location: "TamilNadu, India",
     rating: 4,
     comment: "Great addition to our home theater room. Creates an amazing ambiance for movie nights. The remote control makes it easy to adjust settings from anywhere."
   }

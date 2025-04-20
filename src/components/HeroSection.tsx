@@ -1,7 +1,8 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import ShopifyButton from "./ShopifyButton";
+import ShopifyBuyButton from "./ShopifyBuyButton";
 
 const HeroSection = () => {
   return (
@@ -18,14 +19,10 @@ const HeroSection = () => {
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
               Experience the magic of the cosmos with our 360° Rotating Nebula Star Projector. Perfect for creating an immersive atmosphere in any room.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-6 px-8 rounded-lg text-lg">
-                Shop Now
-              </Button>
-              <Button variant="outline" className="border-purple-400 text-purple-400 hover:bg-purple-400/10">
-                Watch Demo
-              </Button>
+            <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+              <ShopifyButton className="w-full sm:w-auto" />
             </div>
+
             <div className="pt-8 hidden md:block">
               <a href="#features" className="flex items-center text-purple-400 hover:text-purple-300">
                 <span className="mr-2">Explore features</span>
@@ -37,7 +34,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-purple-500/30 rounded-full blur-2xl"></div>
               <img 
-                src="https://images.unsplash.com/photo-1500673922987-e212871fec22" 
+                src="../public/img1.jpg" 
                 alt="Astronaut Galaxy Projector in Action" 
                 className="relative z-10 w-full h-auto rounded-lg shadow-lg"
               />

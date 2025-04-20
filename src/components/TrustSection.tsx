@@ -21,7 +21,7 @@ const trustBadges = [
   {
     icon: <Truck className="w-10 h-10 text-purple-400" />,
     title: "Fast Delivery",
-    description: "Free shipping on orders over $35 with 2-3 day delivery"
+    description: "Free shipping on all orders with 2-3 day delivery"
   }
 ];
 

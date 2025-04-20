@@ -44,11 +44,14 @@ const ProductShowcase = () => {
             <CardContent className="p-0">
               <div className="relative">
                 <div className="absolute top-0 left-0 bg-purple-600 text-white px-4 py-2 rounded-br-lg font-medium z-10">
+                  Projector Off
+                </div>
+                <div className="absolute top-0 right-0 bg-purple-600 text-white px-4 py-2 rounded-br-lg font-medium z-10">
                   Projector On
                 </div>
                 <AspectRatio ratio={16/9}>
                   <img 
-                    src="https://images.unsplash.com/photo-1470813740244-df37b8c1edcb" 
+                    src="../public/img2.jpg" 
                     alt="Room with galaxy projector" 
                     className="w-full h-full object-cover rounded-t-lg"
                   />

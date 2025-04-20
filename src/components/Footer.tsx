@@ -4,7 +4,7 @@ import { Star, Instagram, Facebook, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-indigo-950 to-black text-white pt-16 pb-8 relative">
+    <footer className="bg-gradient-to-b from-indigo-950 to-black text-white pt-16 pb-24 relative">
       {/* Star decorations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-1/4 w-1 h-1 bg-white rounded-full opacity-70"></div>
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-indigo-900/50 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center pb-20 md:pb-10">
             <p className="text-indigo-400 text-sm">
               &copy; {new Date().getFullYear()} Galaxy Projector. All rights reserved.
             </p>

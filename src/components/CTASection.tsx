@@ -23,7 +23,7 @@ const CTASection = () => {
           </div>
           
           <p className="mt-6 text-sm text-gray-400">
-            Free shipping on orders over $35 • 30-day money-back guarantee
+            Free shipping on all orders.
           </p>
         </div>
       </div>

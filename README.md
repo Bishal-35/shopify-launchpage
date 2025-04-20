@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# Shopify Launchpage
 
-## Project info
+A powerful toolkit for rapidly launching and scaling Shopify stores with advanced features and optimizations.
 
-**URL**: https://lovable.dev/projects/e359523f-9eaf-42dd-a8cc-28d2d07e883f
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+- **Quick Store Setup** - Launch a fully configured Shopify store in minutes
+- **Performance Optimization** - Built-in best practices for speed and conversion
+- **Theme Customization** - Easily modify store appearance without coding
+- **Analytics Dashboard** - Track performance metrics in real-time
+- **SEO Tools** - Optimize your store for search engines
 
-**Use Lovable**
+## 🚀 Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e359523f-9eaf-42dd-a8cc-28d2d07e883f) and start prompting.
+### Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js 16.x or higher
+- npm or yarn or bun
+- Shopify Partner account
 
-**Use your preferred IDE**
+### Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/shopify-launchpage.git
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# Navigate to project directory
+cd shopify-launchpage
 
-Follow these steps:
+# Install dependencies
+bun install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-bun i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 bun run dev
 ```
 
-**Edit a file directly in GitHub**
+## 💻 Development
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This project uses:
 
-**Use GitHub Codespaces**
+- **Vite** - Next generation frontend tooling
+- **TypeScript** - For type-safe code
+- **React** - UI component library
+- **shadcn-ui** - UI component system
+- **Tailwind CSS** - Utility-first CSS framework
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Project Structure
 
-## What technologies are used for this project?
+```
+shopify-launchpage/
+├── public/          # Static assets
+├── src/
+│   ├── components/  # React components
+│   ├── pages/       # Application pages
+│   ├── hooks/       # Custom React hooks
+│   ├── lib/         # Utilities and helpers
+│   └── styles/      # Global styles and Tailwind config
+└── ...
+```
 
-This project is built with:
+## 📦 Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Build your project:
+   ```bash
+   bun run build
+   ```
 
-## How can I deploy this project?
+2. Deploy using our one-click solution:
+   ```bash
+    bun run preview
+   ```
 
-Simply open [Lovable](https://lovable.dev/projects/e359523f-9eaf-42dd-a8cc-28d2d07e883f) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
 
-Yes, you can!
+## 📝 License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

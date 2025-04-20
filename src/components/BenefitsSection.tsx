@@ -20,7 +20,7 @@ const BenefitsSection = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-purple-500/30 rounded-full blur-3xl"></div>
               <img 
-                src="../public/img3.jpg" 
+                src="/img3.jpg" 
                 alt="Galaxy Projector in Action" 
                 className="relative z-10 w-full h-auto rounded-lg shadow-lg"
               />

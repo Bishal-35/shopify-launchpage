@@ -51,7 +51,7 @@ const ProductShowcase = () => {
                 </div>
                 <AspectRatio ratio={16/9}>
                   <img 
-                    src="../public/img2.jpg" 
+                    src="/img2.jpg" 
                     alt="Room with galaxy projector" 
                     className="w-full h-full object-cover rounded-t-lg"
                   />

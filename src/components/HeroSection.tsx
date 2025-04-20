@@ -34,7 +34,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-purple-500/30 rounded-full blur-2xl"></div>
               <img 
-                src="../public/img1.jpg" 
+                src="/img1.jpg" 
                 alt="Astronaut Galaxy Projector in Action" 
                 className="relative z-10 w-full h-auto rounded-lg shadow-lg"
               />
